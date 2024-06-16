@@ -32,8 +32,8 @@ enum Value
 struct Card{
     Suit suit;
     Value value;
-}
-;
+};
+
 class Deck{
 
     public:
@@ -54,15 +54,5 @@ class Deck{
 		void displayCard(Card card);
 
 };
-
-
-
-
-
-
-
-
-
-
 
 #endif // POC_deck

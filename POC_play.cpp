@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include "POC_deck.h"
 using namespace std;
-#define DELAY_TIME 5
+#define DELAY_TIME 0
 
 int main(){
     Deck deck;

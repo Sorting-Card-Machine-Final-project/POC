@@ -162,11 +162,13 @@ void Deck::rearrange(){
             stackCount.pop();
             // cout << "Pushback from rearrange[0]()" << endl; // Delete
             pushBackFromCart();
+            cout << "\nThe pack after first sort\n" << endl; // Delete
+            Display(); // Delete
             break;    
 
         case 1:
             count = 0;
-            // cout << "The next number of card to work with is " << stackCount.front() << endl; // Delete
+            cout << "The next number of card to work with is " << stackCount.front() << endl; // Delete
             for(int i = 0; i < DefaultDeckSize; i++)
             {
                 cart[getDivide(deck.front().value)].push(deck.front());
@@ -183,14 +185,14 @@ void Deck::rearrange(){
                     // cout << "The next number of card to work with is " << stackCount.front() << endl; // Delete
                 }
             }
-            // cout << "\n\n\nsecond arrange \n\n\n"; // Delete
-            // Display(); // Delete
+            cout << "\n\n\nsecond arrange \n\n\n"; // Delete
+            Display(); // Delete
             break;    
         case 2:
             count = 0;
             for(int i = 0; i < DefaultDeckSize; i++)
             {
-                // cout << "The next number of card to work with is " << stackCount.front() << endl; // Delete
+                cout << "The next number of card to work with is " << stackCount.front() << endl; // Delete
                 cart[getLastDevide(deck.front().value)].push(deck.front());
                 // cout << "pushing "; // Delete
                 // displayCard(deck.front()); // Delete
@@ -205,8 +207,8 @@ void Deck::rearrange(){
                 }
             }
             pushBackFromCart();
-            // cout << "\n\n\nthird arrange \n\n\n";// Delete
-            // Display(); // Delete
+            cout << "\n\n\nthird arrange \n\n\n";// Delete
+            Display(); // Delete
             break; 
         default:
             break;
